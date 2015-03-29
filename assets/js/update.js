@@ -13,6 +13,7 @@ $.ajax({
 
 			}
 		});
+		recursively_ajax();
 	},
 	error: function(xhs, textStatus, errorThrown) {
 		if(xhr.status === 404) {
