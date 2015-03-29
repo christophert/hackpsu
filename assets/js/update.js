@@ -9,7 +9,7 @@ $.ajax({
 			if(log.event.tr == 0) {
 				$("#events").prepend("<tr><td>"+log.event.id+"</td><td>"+log.event.measurement+"</td><td>"+log.event.userid+"</td><td>"+log.event.tr+"</td></tr>");
 			} else {
-				$("#events").prepend("<tr class="danger"><td>"+log.event.id+"</td><td>"+log.event.measurement+"</td><td>"+log.event.userid+"</td><td>"+log.event.tr+"</td></tr>");
+				$("#events").prepend("<tr class=\"danger\"><td>"+log.event.id+"</td><td>"+log.event.measurement+"</td><td>"+log.event.userid+"</td><td>"+log.event.tr+"</td></tr>");
 
 			}
 		});
