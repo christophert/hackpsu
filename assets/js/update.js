@@ -4,8 +4,8 @@ $.ajax({
 	timeout: 2000,
 	cache: false,
 	success: function(r) {
-		$.each(r.log, function(i, log) {
-			$("#events").prepend("<tr><td>"+log.entry.id+"</td><td>"+log.entry.measurement+"</td><td>"+log.entry.userid+"</td><td>"+log.entry.tr+"</td></tr>");
+		$.each(r, function(i, log) {
+			$("#events").prepend("<tr><td>"+r.entry.id+"</td><td>"+log.entry.measurement+"</td><td>"+log.entry.userid+"</td><td>"+log.entry.tr+"</td></tr>");
 		});
 	},
 	error: function(xhs, textStatus, errorThrown) {
