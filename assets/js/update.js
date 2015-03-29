@@ -6,7 +6,7 @@ $.ajax({
 	success: function(r) {
 		$.each(r.log, function(i, log) {
 			console.log(log);
-			$("#events").prepend("<tr><td>"+log.entry.id+"</td><td>"+log.entry.measurement+"</td><td>"+log.entry.userid+"</td><td>"+log.entry.tr+"</td></tr>");
+			$("#events").prepend("<tr><td>"+log.event.id+"</td><td>"+log.event.measurement+"</td><td>"+log.event.userid+"</td><td>"+log.event.tr+"</td></tr>");
 		});
 	},
 	error: function(xhs, textStatus, errorThrown) {
