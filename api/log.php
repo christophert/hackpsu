@@ -10,5 +10,5 @@ require("../../../db.php");
 session_start();
 header("Content-Type: application/json");
 $end['log'] = $response;
-echo json_encode($end);
+echo json_encode($end, JSON_PRETTY_PRINT);
 ?>
