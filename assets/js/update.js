@@ -1,7 +1,7 @@
 $.ajax({
 	type: "POST",
 	url: "api/log.php",
-	timeout: 2000,
+	timeout: 5000,
 	cache: false,
 	success: function(r) {
 		$.each(r.log, function(i, log) {
