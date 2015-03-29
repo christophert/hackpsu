@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Welcome to My Own Life"
+            android:id="@+id/textView" android:layout_gravity="center_horizontal"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView" android:layout_gravity="center_horizontal" android:longClickable="false"
+            android:src="@drawable/healthy"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Current situation:"
+            android:id="@+id/textView2"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Normal"
+            android:id="@+id/textView3" android:layout_gravity="center_horizontal" android:textColor="#ff00ff00"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:id="@+id/button" android:layout_gravity="center_horizontal" android:onClick="settingsV"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceLarge" android:text="Call emergency?"
+              android:id="@+id/textView8" android:textColor="#ffff0000"
+              android:visibility="invisible" android:layout_gravity="center_horizontal"/>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cancel"
+            android:id="@+id/button4" android:visibility="invisible" android:layout_gravity="center_horizontal"/>
+</LinearLayout>
+
