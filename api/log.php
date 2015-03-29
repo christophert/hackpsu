@@ -1,5 +1,5 @@
 <?php
-require("../../db.php");
+require("../../../db.php");
 function getAllEntries() {
 	$stmt = $conn->prepare("select * from events");
 	if($stmt->execute()) {
