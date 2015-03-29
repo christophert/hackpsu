@@ -7,6 +7,6 @@ require("../../../db.php");
 
 session_start();
 header("Content-Type: application/json");
-$end['log'] = $reponse;
+$end['log'] = $response;
 echo json_encode($end);
 ?>
