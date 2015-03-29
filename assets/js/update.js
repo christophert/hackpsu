@@ -6,7 +6,12 @@ $.ajax({
 	success: function(r) {
 		$.each(r.log, function(i, log) {
 			console.log(log);
-			$("#events").prepend("<tr><td>"+log.event.id+"</td><td>"+log.event.measurement+"</td><td>"+log.event.userid+"</td><td>"+log.event.tr+"</td></tr>");
+			if(log.event.tr == 0) {
+				$("#events").prepend("<tr><td>"+log.event.id+"</td><td>"+log.event.measurement+"</td><td>"+log.event.userid+"</td><td>"+log.event.tr+"</td></tr>");
+			} else {
+				$("#events").prepend("<tr class="danger"><td>"+log.event.id+"</td><td>"+log.event.measurement+"</td><td>"+log.event.userid+"</td><td>"+log.event.tr+"</td></tr>");
+
+			}
 		});
 	},
 	error: function(xhs, textStatus, errorThrown) {
