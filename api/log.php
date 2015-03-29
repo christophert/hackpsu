@@ -2,7 +2,9 @@
 require("../../../db.php");
 	$stmt = $conn->prepare("select * from events");
 	if($stmt->execute()) {
-		$response = $stmt->fetch(PDO::FETCH_ASSOC);
+		while($r = $stmt->fetch(PDO::FETCH_ASSOC)) {
+			$response[] = array('event' => $r);
+		}
 	}
 
 session_start();
