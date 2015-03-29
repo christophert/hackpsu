@@ -5,7 +5,7 @@ $.ajax({
 	cache: false,
 	success: function(r) {
 		$.each(r.log, function(i, log) {
-			print(log);
+			log(log);
 			$("#events").prepend("<tr><td>"+log.entry.id+"</td><td>"+log.entry.measurement+"</td><td>"+log.entry.userid+"</td><td>"+log.entry.tr+"</td></tr>");
 		});
 	},
